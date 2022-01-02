@@ -32,18 +32,15 @@ const Navbar = () => {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">Home</a>
+          <a class="navbar-item">AdminHome</a>
 
-          <a class="navbar-item" href="/contact">
-            Contact
-          </a>
-          <a class="navbar-item" href="/articles">
+          <a class="navbar-item" href="/admin/articles">
             Articles
           </a>
-          <a class="navbar-item" href="/work">
+          <a class="navbar-item" href="/admin/work">
             Work
           </a>
-          <a class="navbar-item" href="/qualifications">
+          <a class="navbar-item" href="/admin/qualifications">
             Qualification
           </a>
         </div>

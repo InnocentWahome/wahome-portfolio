@@ -1,10 +1,15 @@
 import * as React from "react"
 
-const NotFoundPage = () => (
-  <div>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+import PageLayout from "../layouts/PageLayout"
+import ContactForm from "../components/forms/ContactForm"
 
+const NotFoundPage = () => {
+  return (
+    <PageLayout>
+      <div className="container pt-6 pl-6">
+        <p class="has-text-centered is-title-2">The page you are looking for does not exist</p>
+      </div>
+    </PageLayout>
+  )
+}
 export default NotFoundPage

@@ -10,7 +10,7 @@ const Footer = () => {
         aria-label="main navigation"
       >
         <div>
-          <h3>Copyright © {year} Innocent Maina, Inc. All rights reserved.</h3>
+          <h3>Admin Panel © {year} Innocent Maina, Inc. All rights reserved.</h3>
         </div>
       </footer>
     </div>

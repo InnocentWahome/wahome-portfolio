@@ -3,7 +3,7 @@ import React from "react"
 const ContactForm = () => {
   return (
     <form
-      action="https://formsubmit.co/innocentwahome@gmail.com"
+      action=""
       method="POST"
       class="container"
     >
