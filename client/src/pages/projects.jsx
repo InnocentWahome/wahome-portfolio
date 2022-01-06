@@ -6,7 +6,12 @@ const WorkPage = () => {
   return (
     <PageLayout>
       <div className="container pt-6 pl-6">
-        <p>My work</p>
+        <p class="title">Projects</p>
+        <p>List of projects I am proud of</p>
+        
+      </div>
+      <div>
+        <p>Websites</p>
       </div>
     </PageLayout>
   )

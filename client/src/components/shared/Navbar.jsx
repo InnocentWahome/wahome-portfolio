@@ -40,8 +40,8 @@ const Navbar = () => {
           <a class="navbar-item" href="/articles">
             Articles
           </a>
-          <a class="navbar-item" href="/work">
-            Work
+          <a class="navbar-item" href="/projects">
+            Projects
           </a>
           <a class="navbar-item" href="/qualifications">
             Qualification
