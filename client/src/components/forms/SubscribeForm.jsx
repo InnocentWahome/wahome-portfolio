@@ -25,7 +25,7 @@ const LoginForm = () => {
 
         <div className="field">
           <button className="button is-black is-rounded" type="submit">
-            Subscribe 
+            Login
           </button>
         </div>
       </div>

@@ -1,10 +1,13 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio-client",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "InnocentWahome portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Innocent Maina <innocentwahome@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.8",
     "bootstrap": "^5.1.3",
     "bulma": "^0.9.3",
     "gatsby": "^4.4.0",
@@ -21,7 +24,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.45.2"
+    "sass": "^1.45.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "prettier": "^2.5.1"
