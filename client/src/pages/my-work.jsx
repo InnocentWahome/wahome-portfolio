@@ -7,7 +7,6 @@ const ContactPage = () => {
   return (
     <PageLayout>
       <div className="container pt-6 pl-6">
-        <p class="pt-6 pb-6">Testimonials here then contact form</p>
         <ContactForm />
       </div>
     </PageLayout>

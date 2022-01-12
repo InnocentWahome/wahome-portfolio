@@ -1,16 +1,16 @@
 import * as React from "react"
 
-import PageLayout from "../layouts/PageLayout"
+import PageLayout from "../../layouts/PageLayout"
 
-const NotFoundPage = () => {
+const UnauthorizedPage = () => {
   return (
     <PageLayout>
       <div className="container pt-6 pl-6">
         <p class="has-text-centered is-title-2">
-          The page you are looking for does not exist
+          You are not authorized to view this page
         </p>
       </div>
     </PageLayout>
   )
 }
-export default NotFoundPage
+export default UnauthorizedPage

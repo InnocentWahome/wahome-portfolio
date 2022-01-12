@@ -2,15 +2,13 @@ import * as React from "react"
 
 import PageLayout from "../layouts/PageLayout"
 
-const NotFoundPage = () => {
+const ClientsPage = () => {
   return (
     <PageLayout>
       <div className="container pt-6 pl-6">
-        <p class="has-text-centered is-title-2">
-          The page you are looking for does not exist
-        </p>
+        <p>These are the clients I've worked with</p>
       </div>
     </PageLayout>
   )
 }
-export default NotFoundPage
+export default ClientsPage

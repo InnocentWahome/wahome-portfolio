@@ -34,17 +34,14 @@ const Navbar = () => {
         <div class="navbar-end">
           <a class="navbar-item">Home</a>
 
+          <a class="navbar-item" href="/about-me">
+            About me
+          </a>
+          <a class="navbar-item" href="/my-work">
+            My Work
+          </a>
           <a class="navbar-item" href="/contact">
             Contact
-          </a>
-          <a class="navbar-item" href="/articles">
-            Articles
-          </a>
-          <a class="navbar-item" href="/projects">
-            Projects
-          </a>
-          <a class="navbar-item" href="/qualifications">
-            Qualification
           </a>
         </div>
       </div>

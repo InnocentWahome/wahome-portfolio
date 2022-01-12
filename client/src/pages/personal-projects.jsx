@@ -2,13 +2,13 @@ import * as React from "react"
 
 import PageLayout from "../layouts/PageLayout"
 
-const QualificationsPage = () => {
+const PersonalProjectsPage = () => {
   return (
     <PageLayout>
       <div className="container pt-6 pl-6">
-        <p>My qualifications</p>
+        <p>These are my personal projects</p>
       </div>
     </PageLayout>
   )
 }
-export default QualificationsPage
+export default PersonalProjectsPage
