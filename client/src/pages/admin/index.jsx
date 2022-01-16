@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import AdminLayout from "../../layouts/AdminLayout"
-import LoginForm from "../../components/forms/LoginForm"
+import LoginForm from "../../components/forms/auth/LoginForm"
 
 const AdminLoginPage = () => {
   return (

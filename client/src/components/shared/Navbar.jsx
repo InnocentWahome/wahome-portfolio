@@ -1,4 +1,5 @@
 import React from "react"
+import Logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
   return (
@@ -8,13 +9,8 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
-            alt="default alt"
-          />
+        <a class="navbar-item" href="/">
+          <img src={Logo} width="112" height="112" alt="default alt" />
         </a>
 
         <a
@@ -32,7 +28,9 @@ const Navbar = () => {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">Home</a>
+          <a class="navbar-item" href="/">
+            Home
+          </a>
 
           <a class="navbar-item" href="/about-me">
             About me

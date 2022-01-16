@@ -1,10 +1,10 @@
 import NavbarLinks from "./constants/SocialsLinks"
 
 import ContactForm from "./forms/ContactForm"
-import LoginForm from "./forms/LoginForm"
+import LoginForm from "./forms/auth/LoginForm"
 import SubscribeForm from "./forms/SubscribeForm"
-import ForgotPasswordForm from "./forms/ForgotPasswordForm"
-import ResetPasswordForm from "./forms/ResetPasswordForm"
+import ForgotPasswordForm from "./forms/auth/ForgotPasswordForm"
+import ResetPasswordForm from "./forms/auth/ResetPasswordForm"
 
 import Footer from "./shared/Footer"
 // import Sidebar from "./shared/AboutSidebar"
