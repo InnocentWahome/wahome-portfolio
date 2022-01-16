@@ -1,4 +1,4 @@
-import NavbarLinks from "./constants/NavbarLinks"
+import NavbarLinks from "./constants/SocialsLinks"
 
 import ContactForm from "./forms/ContactForm"
 import LoginForm from "./forms/LoginForm"
@@ -7,7 +7,7 @@ import ForgotPasswordForm from "./forms/ForgotPasswordForm"
 import ResetPasswordForm from "./forms/ResetPasswordForm"
 
 import Footer from "./shared/Footer"
-import Sidebar from "./shared/Sidebar"
+// import Sidebar from "./shared/AboutSidebar"
 import Navbar from "./shared/Navbar"
 
 import AdminFooter from "./admin/AdminFooter"
@@ -21,7 +21,7 @@ export {
   LoginForm,
   ResetPasswordForm,
   ForgotPasswordForm,
-  Sidebar,
+  // Sidebar,
   SubscribeForm,
   Footer,
   AdminFooter,
