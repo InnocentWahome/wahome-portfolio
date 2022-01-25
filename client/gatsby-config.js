@@ -32,15 +32,20 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337/admin`,
-        queryLimit: 1000, // Defaults to 100
+        apiURL: process.env.API_URL || `http://localhost:1337`,
+        queryLimit: 10000, // Defaults to 100
         collectionTypes: [
           `about`,
           `article`,
           `client`,
           `project`,
           `testimonial`,
-          `work`
+          `work`,
+          // `grades`,
+          // `exams`,
+          // `notices`,
+          // `schools`,
+          // `strands`,
         ],
       },
     },
