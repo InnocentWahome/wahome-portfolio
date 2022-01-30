@@ -1,30 +1,38 @@
 {
-  "name": "portfolio-server",
-  "private": true,
+  "name": "template-web",
   "version": "1.0.0",
-  "description": "InnocentWahome Portfolio",
+  "private": true,
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "dev": "node ace serve --watch",
+    "build": "node ace build --production",
+    "start": "node server.js",
+    "lint": "eslint . --ext=.ts",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^5.3.9",
+    "adonis-preset-ts": "^2.1.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-adonis": "^2.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pino-pretty": "^7.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "~4.5",
+    "youch": "^3.0.0",
+    "youch-terminal": "^2.0.0"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.0.6",
-    "@strapi/plugin-i18n": "4.0.6",
-    "@strapi/plugin-users-permissions": "4.0.6",
-    "@strapi/strapi": "4.0.6",
-    "mysql": "^2.18.1"
-  },
-  "author": {
-    "name": "Innocent Maina"
-  },
-  "strapi": {
-    "uuid": "2a85dbb2-2fd3-497a-a6bf-6647cdd3eec9"
-  },
-  "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+    "@adonisjs/auth": "^5.1.1",
+    "@adonisjs/core": "^5.4.2",
+    "@adonisjs/lucid": "^10.0.0",
+    "@adonisjs/repl": "^3.1.7",
+    "luxon": "^2.3.0",
+    "phc-argon2": "^1.1.1",
+    "mysql": "^2.18.1",
+    "proxy-addr": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.21"
+  }
 }
+  
