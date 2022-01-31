@@ -1,25 +1,49 @@
-/*
-|--------------------------------------------------------------------------
-| Routes
-|--------------------------------------------------------------------------
-|
-| This file is dedicated for defining HTTP routes. A single file is enough
-| for majority of projects, however you can define routes in different
-| files and just make sure to import them inside this file. For example
-|
-| Define routes in following two files
-| ├── start/routes/cart.ts
-| ├── start/routes/customer.ts
-|
-| and then import them inside `start/routes.ts` as follows
-|
-| import './routes/cart'
-| import './routes/customer'
-|
-*/
-
 import Route from '@ioc:Adonis/Core/Route'
+import {HttpContextContract} from '@ioc:Adonis/Core/HttpContext'
+import HealthCheck from '@ioc:Adonis/Core/HealthCheck'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
+
+Route.get('api/v1', ({ response }: HttpContextContract) => {
+  return response.status(200).json({
+    success: true,
+    message: 'Welcome to Rentpal API',
+    data: null,
+  })
 })
+Route.get('api/v1/health', async ({ response }) => {
+  const report = await HealthCheck.getReport()
+
+  return report.healthy ? response.ok(report) : response.badRequest(report)
+})
+
+
+//auth routes
+Route.group(() => {
+  Route.get('/user', 'AuthenticationController.user')
+  Route.post('/login', 'AuthenticationController.login')
+  Route.post('/register', 'AuthenticationController.register')
+  Route.post('/forgot-password', 'AuthenticationController.forgotPassword')
+  Route.post('/set-password', 'AuthenticationController.resetPassword')
+}).prefix('/api/v1/auth')
+
+
+// courses routes
+Route.group(() => {
+  Route.group(() => {
+    Route.get('/', 'CoursesController.index')
+    Route.post('/', 'CoursesController.store')
+    Route.get('/:id', 'CoursesController.show')
+    Route.put('/:id', 'CoursesController.update')
+    Route.delete('/:id', 'CoursesController.delete')
+  }).prefix('/course')
+
+  Route.group(() => {
+    Route.get('/', 'TasksController.index')
+    Route.post('/', 'TasksController.store')
+    Route.get('/:id', 'TasksController.show')
+    Route.put('/:id', 'TasksController.update')
+    Route.delete('/:id', 'TasksController.delete')
+  }).prefix('/task')
+})
+  .prefix('/api/v1')
+  .middleware('auth')
