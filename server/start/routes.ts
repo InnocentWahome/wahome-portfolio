@@ -37,6 +37,31 @@ Route.group(() => {
     Route.delete('/:id', 'CoursesController.delete')
   }).prefix('/course')
 
+  // about routes
+  Route.group(() => {
+    Route.get('/', 'AboutController.index')
+    Route.post('/', 'AboutController.store')
+    Route.get('/:id', 'AboutController.show')
+    Route.put('/:id', 'AboutController.update')
+    Route.delete('/:id', 'AboutController.delete')
+  }).prefix('/about')
+
+  Route.group(() => {
+    Route.get('/', 'ArticleController.index')
+    Route.post('/', 'ArticleController.store')
+    Route.get('/:id', 'ArticleController.show')
+    Route.put('/:id', 'ArticleController.update')
+    Route.delete('/:id', 'ArticleController.delete')
+  }).prefix('/article')
+
+  Route.group(() => {
+    Route.get('/', 'ClientController.index')
+    Route.post('/', 'ClientController.store')
+    Route.get('/:id', 'ClientController.show')
+    Route.put('/:id', 'ClientController.update')
+    Route.delete('/:id', 'ClientController.delete')
+  }).prefix('/client')
+    
   Route.group(() => {
     Route.get('/', 'TasksController.index')
     Route.post('/', 'TasksController.store')
