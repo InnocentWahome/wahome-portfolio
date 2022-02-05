@@ -6,6 +6,14 @@ import SubscribeForm from "./forms/SubscribeForm"
 import ForgotPasswordForm from "./forms/auth/ForgotPasswordForm"
 import ResetPasswordForm from "./forms/auth/ResetPasswordForm"
 
+import AboutMeForm from "./forms/AboutMeForm"
+import ArticleForm from "./forms/ArticleForm"
+import ClientForm from "./forms/ClientForm"
+import PersonalProjectForm from "./forms/PersonalProjectForm"
+import TestimonialForm from "./forms/TestimonialForm"
+import WorkForm from "./forms/WorkForm"
+
+
 import Footer from "./shared/Footer"
 // import Sidebar from "./shared/AboutSidebar"
 import Navbar from "./shared/Navbar"
@@ -27,4 +35,10 @@ export {
   AdminFooter,
   AdminNavbar,
   AdminSidebar,
+  AboutMeForm,
+  ArticleForm,
+  ClientForm,
+  PersonalProjectForm,
+  TestimonialForm,
+  WorkForm
 }
