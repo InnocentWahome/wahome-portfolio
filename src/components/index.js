@@ -1,4 +1,4 @@
-import NavbarLinks from "./constants/SocialsLinks"
+// import NavbarLinks from "./constants/SocialsLinks"
 
 import ContactForm from "./forms/ContactForm"
 
@@ -10,10 +10,9 @@ import Navbar from "./shared/Navbar"
 
 export {
   Navbar,
-  NavbarLinks,
+  // NavbarLinks,
   ContactForm,
   // Sidebar,
-  SubscribeForm,
   Footer,
 
 }
