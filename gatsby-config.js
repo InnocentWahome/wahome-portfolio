@@ -29,25 +29,5 @@ module.exports = {
         icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.API_URL || `http://localhost:1337`,
-        queryLimit: 10000, // Defaults to 100
-        collectionTypes: [
-          // `about`,
-          // `article`,
-          // `blog`,
-          // `client`,
-          // `project`,
-          // `testimonial`,
-          // `work`,
-          `brand`,
-          `color`,
-          `product`,
-          `vendor`
-        ],
-      },
-    },
   ],
 }
