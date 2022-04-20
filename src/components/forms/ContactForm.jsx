@@ -3,7 +3,7 @@ import React from "react"
 const ContactForm = () => {
   return (
     <form
-      action=""
+      action="https://formsubmit.co/innocentwahome@gmail.com"
       method="POST"
       class="container"
     >
@@ -12,7 +12,12 @@ const ContactForm = () => {
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Name" />
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                />
               </p>
             </div>
           </div>
@@ -21,7 +26,12 @@ const ContactForm = () => {
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded">
-                <input class="input" type="email" placeholder="Email" />
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Email"
+                  name="Email"
+                />
               </p>
             </div>
           </div>
@@ -31,14 +41,23 @@ const ContactForm = () => {
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Phone number" />
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Phone number (optional)"
+                  name="Phone Number"
+                />
               </p>
             </div>
           </div>
         </div>
 
         <div className="field">
-          <textarea placeholder="Message" className="textarea"></textarea>
+          <textarea
+            placeholder="Message"
+            className="textarea"
+            name="message"
+          ></textarea>
         </div>
 
         <div className="field">

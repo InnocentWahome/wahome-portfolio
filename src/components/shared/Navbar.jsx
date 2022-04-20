@@ -2,20 +2,33 @@ import React from "react"
 import Logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
+  const handleLogout = () => {
+    localStorage.clear()
+  }
+  // ResponsiveFunction()
+  const [isActive, setisActive] = React.useState(false)
+
   return (
     <nav
-      class="navbar  is-transparent"
+      className="navbar navbar-menu is-active is-fixed-top has-text-centered"
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src={Logo} width="112" height="112" alt="default alt" />
+      <div className="navbar-brand">
+        <a className="navbar-item" href="https://bulma.io">
+        <img
+            src={Logo}
+            width="100"
+            height="350"
+            alt="default alt"
+          />
         </a>
-
-        <a
+        <a href="#"
+          onClick={() => {
+            setisActive(!isActive)
+          }}
           role="button"
-          class="navbar-burger"
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -26,12 +39,14 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="/">
+      <div
+        id="navbarBasicExample"
+        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+      >
+        <div className="navbar-end">
+          <a className="navbar-item" href="/">
             Home
           </a>
-
           <a class="navbar-item" href="/about-me">
             About me
           </a>
